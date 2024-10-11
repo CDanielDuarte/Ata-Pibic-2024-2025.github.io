@@ -2,7 +2,6 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/git-github/git-github.html",
       "/posts/nextflow_posts/digram.html",
       "/posts/Sequênciamento/Rna-seq/rna-seq.html",
       "/posts/Sequênciamento/Pacbio_seq/pacbio.html",
