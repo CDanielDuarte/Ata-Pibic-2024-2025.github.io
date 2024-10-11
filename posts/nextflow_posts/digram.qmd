@@ -14,7 +14,7 @@ flowchart TD
    data([Fastq]) --> |data + jobID + Start| A[Trimmomatic=0.39, --paried] & B[trim_galore=0.6.4 --paried] 
    A & B --> |date + jobID +hostname + end| D[Reads lengths]
 
-
+   data --> E
    E[HybPiper=1.3.1] --> |jobID + date| F[HybPiper=1.3.1, get_seq_lengths.py] 
    F --> |job_id +date| G[seq_lengths.txt]
    G --> |job_ID + date| H[hybpiper_stats.py] 
