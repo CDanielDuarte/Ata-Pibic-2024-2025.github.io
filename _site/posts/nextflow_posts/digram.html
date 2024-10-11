@@ -164,13 +164,13 @@ ul.task-list li input[type="checkbox"] {
 <div>
 <pre class="mermaid mermaid-js">flowchart TD
    data([Fastq]) --&gt; |data + jobID + Start| A[Trimmomatic=0.39, --paried] &amp; B[trim_galore=0.6.4 --paried] 
-   A &amp; B &amp; C --&gt; |date + jobID +hostname + end| D[Reads lengths]
+   A &amp; B --&gt; |date + jobID +hostname + end| D[Reads lengths]
 
 
    E[HybPiper=1.3.1] --&gt; |jobID + date| F[HybPiper=1.3.1, get_seq_lengths.py] 
    F --&gt; |job_id +date| G[seq_lengths.txt]
-   G --&gt; |job_ID + date| --&gt; H[hybpiper_stats.py] 
-   H --&gt; |job_id + date, end| --&gt; I[test_stats.txt]
+   G --&gt; |job_ID + date| H[hybpiper_stats.py] 
+   H --&gt; |job_id + date, end| I[test_stats.txt]
    
 
    
