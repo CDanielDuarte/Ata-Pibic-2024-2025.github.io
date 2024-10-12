@@ -12,23 +12,14 @@ This task is aimed to take a pipeline maked in qsub format and rebuild it into `
 ````{mermaid}
 flowchart TD
    data([Fastq]) --> |data + jobID + Start| A[Trimmomatic=0.39, --paried] & B[trim_galore=0.6.4 --paried] 
-   A & B & C --> |date + jobID +hostname + end| D[Reads lengths]
+   A & B  --> |date + jobID +hostname + end| D[Reads lengths]
 
-
+    data --> E
    E[HybPiper=1.3.1] --> |jobID + date| F[HybPiper=1.3.1, get_seq_lengths.py] 
    F --> |job_id +date| G[seq_lengths.txt]
-   G --> |job_ID + date| --> H[hybpiper_stats.py] 
-   H --> |job_id + date, end| --> I[test_stats.txt]
+   G --> |job_ID + date| H[hybpiper_stats.py] 
+   H --> |job_id + date, end| I[test_stats.txt]
    
-
-   
-
-   
-
-
-
-
-
 ````
 
 ## Virutal enviroment

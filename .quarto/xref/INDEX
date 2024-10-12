@@ -1,0 +1,41 @@
+{
+  "posts/Sequênciamento/Rna-seq/rna-seq.qmd": {
+    "rna-seq.html": "10fdbf04"
+  },
+  "posts/Sequênciamento/Pacbio_seq/pacbio.qmd": {
+    "pacbio.html": "e38e50e1"
+  },
+  "posts/Sequênciamento/NGS/ngs.qmd": {
+    "ngs.html": "88247cf3"
+  },
+  "posts/Sequênciamento/Nanopore/Nanopore.qmd": {
+    "Nanopore.html": "bfbb7e13"
+  },
+  "posts/Sequênciamento/Sanger/sanger.qmd": {
+    "sanger.html": "7a23606a"
+  },
+  "posts/testes/teste_de_criação.qmd": {
+    "teste_de_criação.html": "9fa4e859"
+  },
+  "posts/nextflow_posts/digram.qmd": {
+    "digram.html": "27348f41"
+  },
+  "posts/post-with-code/python/iris.qmd": {
+    "iris.html": "846caef8"
+  },
+  "posts/post-with-code/python/teste_py.qmd": {
+    "teste_py.html": "07112e6a"
+  },
+  "posts/post-with-code/R/teste_r.qmd": {
+    "teste_r.html": "20dc0188"
+  },
+  "posts/git-github/git-github.qmd": {
+    "git-github.html": "090784f7"
+  },
+  "index.qmd": {
+    "index.html": "3973da57"
+  },
+  "about.qmd": {
+    "about.html": "fdb234f7"
+  }
+}
