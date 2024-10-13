@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "nexflow_page.html",
+    "href": "nexflow_page.html",
+    "title": "Nextflow pipelines",
+    "section": "",
+    "text": "#bla\n\ndiagrama"
+  },
+  {
+    "objectID": "digram.html",
+    "href": "digram.html",
+    "title": "improving quality of a pipeline",
+    "section": "",
+    "text": "This task is aimed to take a pipeline maked in qsub format and rebuild it into nextflow, make a virtual environment and a Docker container to run this pipeline. To pursue this task I will make a diagram in marmaid to make it easy to visualize the qsub pipeline.\n\n\n\n\n\nflowchart TD\n   data([Fastq]) --&gt; |data + jobID + Start| A[Trimmomatic=0.39, --paried] & B[trim_galore=0.6.4 --paried] \n   A & B  --&gt; |date + jobID +hostname + end| D[Reads lengths]\n\n    data --&gt; E\n   E[HybPiper=1.3.1] --&gt; |jobID + date| F[HybPiper=1.3.1, get_seq_lengths.py] \n   F --&gt; |job_id +date| G[seq_lengths.txt]\n   G --&gt; |job_ID + date| H[hybpiper_stats.py] \n   H --&gt; |job_id + date, end| I[test_stats.txt]\n   \n\n\n\n\n\n\n\n\nname: pipline.yaml\ndependencies:\n- trimmomatic\n- trim_galore\n- python3\n- hybpiper\n\nThere are 20 .qsub documents describing the pipeline, sorted to numbers 0 to 20\n\n0_ToCleanReadsPE_NEBAdaptersIllumina.qsub\n\n(base) daniel@DESKTOP-DBTGBH4:~$ cat  pibic_2024-25/posts/nextflow/out-24/Scripts/0_ToCleanReadsPE_NEBAdaptersIllumina.qsub\n# /bin/sh\n# ----------------Parameters---------------------- #\n#$ -S /bin/sh\n#$ -pe mthread 10\n#$ -q mThM.q\n#$ -l mres=100G,h_data=10G,h_vmem=10G,himem\n#$ -cwd\n#$ -j y\n#$ -N CleanReads\n#$ -o CleanReads.log\n#\n# ----------------Modules------------------------- #\nmodule load bioinformatics/trimmomatic/0.39\nmodule load bioinformatics/trim_galore/0.6.4\n#\n# ----------------Your Commands------------------- #\n#You should have the NEB adaptors file (TruSeq3-PE-2NEB.fa) in the folder above your pwd\n# and the file \"namelist.txt\" including only the species letter and 3 number codes in the pwd\n#(i.e. the main folder above your species specific folder)\n#\necho + `date` job $JOB_NAME started in $QUEUE with jobID=$JOB_ID on $HOSTNAME\necho + NSLOTS = $NSLOTS\n#\nwhile read name; \ndo java -jar /share/apps/bioinformatics/trimmomatic/0.39/trimmomatic-0.39.jar PE -threads $NSLOTS -phred33 $name*_R1.fastq.gz $name*_R2.fastq.gz $name*_R1.qtrim.fastq $name*_forward_unpaired.qtrim.fastq $name*_R2.qtrim.fastq $name*_reverse_unpaired.qtrim.fastq ILLUMINACLIP:../TruSeq3-PE-2NEB.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:10:20 MINLEN:40\ndone &lt; namelist.txt\n#\nwhile read name;\ndo trim_galore --illumina --paired $name*_R1.qtrim.fastq $name*_R2.qtrim.fastq\ndone &lt; namelist.txt\n#\necho = `date` job $JOB_NAME done\n\n\n0b_QTrimReadsCheck2.qsub"
+  },
+  {
+    "objectID": "digram.html#virutal-enviroment",
+    "href": "digram.html#virutal-enviroment",
+    "title": "improving quality of a pipeline",
+    "section": "",
+    "text": "name: pipline.yaml\ndependencies:\n- trimmomatic\n- trim_galore\n- python3\n- hybpiper\n\nThere are 20 .qsub documents describing the pipeline, sorted to numbers 0 to 20\n\n0_ToCleanReadsPE_NEBAdaptersIllumina.qsub\n\n(base) daniel@DESKTOP-DBTGBH4:~$ cat  pibic_2024-25/posts/nextflow/out-24/Scripts/0_ToCleanReadsPE_NEBAdaptersIllumina.qsub\n# /bin/sh\n# ----------------Parameters---------------------- #\n#$ -S /bin/sh\n#$ -pe mthread 10\n#$ -q mThM.q\n#$ -l mres=100G,h_data=10G,h_vmem=10G,himem\n#$ -cwd\n#$ -j y\n#$ -N CleanReads\n#$ -o CleanReads.log\n#\n# ----------------Modules------------------------- #\nmodule load bioinformatics/trimmomatic/0.39\nmodule load bioinformatics/trim_galore/0.6.4\n#\n# ----------------Your Commands------------------- #\n#You should have the NEB adaptors file (TruSeq3-PE-2NEB.fa) in the folder above your pwd\n# and the file \"namelist.txt\" including only the species letter and 3 number codes in the pwd\n#(i.e. the main folder above your species specific folder)\n#\necho + `date` job $JOB_NAME started in $QUEUE with jobID=$JOB_ID on $HOSTNAME\necho + NSLOTS = $NSLOTS\n#\nwhile read name; \ndo java -jar /share/apps/bioinformatics/trimmomatic/0.39/trimmomatic-0.39.jar PE -threads $NSLOTS -phred33 $name*_R1.fastq.gz $name*_R2.fastq.gz $name*_R1.qtrim.fastq $name*_forward_unpaired.qtrim.fastq $name*_R2.qtrim.fastq $name*_reverse_unpaired.qtrim.fastq ILLUMINACLIP:../TruSeq3-PE-2NEB.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:10:20 MINLEN:40\ndone &lt; namelist.txt\n#\nwhile read name;\ndo trim_galore --illumina --paired $name*_R1.qtrim.fastq $name*_R2.qtrim.fastq\ndone &lt; namelist.txt\n#\necho = `date` job $JOB_NAME done\n\n\n0b_QTrimReadsCheck2.qsub"
+  }
+]

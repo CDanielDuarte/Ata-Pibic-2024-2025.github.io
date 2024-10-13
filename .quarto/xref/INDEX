@@ -37,5 +37,11 @@
   },
   "about.qmd": {
     "about.html": "fdb234f7"
+  },
+  "posts/nextflow_posts/nexflow_page.qmd": {
+    "nexflow_page.html": "36e8a893"
+  },
+  "dashboard.qmd": {
+    "dashboard.html": "2351c658"
   }
 }

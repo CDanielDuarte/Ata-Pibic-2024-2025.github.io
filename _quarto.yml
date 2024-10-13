@@ -1,19 +1,38 @@
 project:
   type: website
   output-dir: docs
+
 website:
+  reader-mode: true
   title: "Ata Bioinfo"
-  navbar:
-    right:
-      - about.qmd
-      - icon: github
-        href: https://github.com/
-      - icon: twitter
-        href: https://twitter.com
+  sidebar:
+    style: "docked"
+    search: true
+    left:
+    contents: 
+      - section: "Nextflow"
+        contents:
+        - posts/nextflow_posts/digram.qmd
+      - section: "Sequenciamento"
+        contents:
+        - posts/Sequênciamento/Nanopore/Nanopore.qmd 
+        - posts/Sequênciamento/NGS/ngs.qmd
+        - posts/Sequênciamento/Pacbio_seq/pacbio.qmd
+        - posts/Sequênciamento/Sanger/sanger.qmd
+      - section: "Transcriptoma"
+        contents:
+         - posts/Sequênciamento/Rna-seq/rna-seq.qmd
+      - section: "Codigos"
+        contents:
+         - posts/post-with-code/python/iris.qmd
+         - posts/post-with-code/python/teste_py.qmd
+         
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme:
+      light: flatly
+      #dark: darkly 
+    css: styles.cssdd
 
 
 

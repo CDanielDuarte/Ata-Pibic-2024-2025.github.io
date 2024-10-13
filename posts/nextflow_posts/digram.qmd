@@ -1,7 +1,7 @@
 ---
 author: Duarte CDM
 date: 2024-10-07
-categories: [Pipeline, Nextflow]
+categories: [Pipelines] 
 format:
  html: default
 ---
