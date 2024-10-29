@@ -1,0 +1,36 @@
+---
+title: Tmux
+date: 2024-10-22
+author: Duarte CMD
+format:
+ html: default
+
+---
+
+# O quê é o Tmux
+
+Tmux it's a teminal multiplex, witch means that it could persue differents taks at the same time. That tool brings feactures like, saving point and infinit split windows.
+
+
+# Pra quê serve
+
+This tool can make a bount of differente conections to server, like SSH conections. 
+
+# Usage
+
+Tmuz is base commands follow one master keey [ctl + b] + command. For exemple:
+
+[ctl + b] + c = make a new windown
+
+[ctl + b] + % = make a new vertical split
+
+[ctl + b] + " = make a new horizontal split
+
+# Referências bibliogŕaficas
+
+1. [A beginner's guide to tmux](https://www.redhat.com/en/blog/introduction-tmux-linux) 
+
+2. [Getting Started with Tmux [Beginner's Guide]](https://linuxhandbook.com/tmux/)
+
+3. [Tmux Documetation](https://github.com/tmux/tmux/wiki/Getting-Started)
+
