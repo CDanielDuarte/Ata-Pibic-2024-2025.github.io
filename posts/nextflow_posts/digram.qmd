@@ -1,12 +1,14 @@
 ---
+title: Improving quality of a pipeline 
 author: Duarte CDM
 date: 2024-10-07
+date-modified: 2024-10-13
 categories: [Pipelines] 
 format:
  html: default
 ---
 
-# improving quality of a pipeline
+# Tasks 
 
 This task is aimed to take a pipeline maked in qsub format and rebuild it into `nextflow`, make a `virtual environment` and a `Docker container` to run this pipeline. To pursue this task I will make a diagram in `marmaid` to make it easy to visualize the qsub pipeline.
 

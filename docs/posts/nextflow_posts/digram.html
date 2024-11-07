@@ -9,7 +9,7 @@
 <meta name="author" content="Duarte CDM">
 <meta name="dcterms.date" content="2024-10-07">
 
-<title>digram – Ata Bioinfo</title>
+<title>Improving quality of a pipeline – Ata Bioinfo</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -85,7 +85,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../posts/nextflow_posts/digram.html">Nextflow</a></li><li class="breadcrumb-item"><a href="../../posts/nextflow_posts/digram.html">improving quality of a pipeline</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../posts/nextflow_posts/digram.html">Nextflow</a></li><li class="breadcrumb-item"><a href="../../posts/nextflow_posts/digram.html">Improving quality of a pipeline</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -97,8 +97,8 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../posts/nextflow_posts/digram.html">Nextflow</a></li><li class="breadcrumb-item"><a href="../../posts/nextflow_posts/digram.html">improving quality of a pipeline</a></li></ol></nav>
-      
+    <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../posts/nextflow_posts/digram.html">Nextflow</a></li><li class="breadcrumb-item"><a href="../../posts/nextflow_posts/digram.html">Improving quality of a pipeline</a></li></ol></nav>
+      <h1 class="title">Improving quality of a pipeline</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">Pipelines</div>
               </div>
@@ -122,6 +122,12 @@ ul.task-list li input[type="checkbox"] {
       </div>
     </div>
     
+      <div>
+      <div class="quarto-title-meta-heading">Modified</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date-modified">October 13, 2024</p>
+      </div>
+    </div>
       
     </div>
     
@@ -160,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../posts/nextflow_posts/digram.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">improving quality of a pipeline</span></a>
+ <span class="menu-text">Improving quality of a pipeline</span></a>
   </div>
 </li>
       </ul>
@@ -253,15 +259,15 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="improving-quality-of-a-pipeline" class="level1">
-<h1>improving quality of a pipeline</h1>
+<section id="tasks" class="level1">
+<h1>Tasks</h1>
 <p>This task is aimed to take a pipeline maked in qsub format and rebuild it into <code>nextflow</code>, make a <code>virtual environment</code> and a <code>Docker container</code> to run this pipeline. To pursue this task I will make a diagram in <code>marmaid</code> to make it easy to visualize the qsub pipeline.</p>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
 <p></p><figure class="figure"><p></p>
 <div>
-<pre class="mermaid mermaid-js">flowchart TD
+<pre class="mermaid mermaid-js">flowchart LR
    data([Fastq]) --&gt; |data + jobID + Start| A[Trimmomatic=0.39, --paried] &amp; B[trim_galore=0.6.4 --paried] 
    A &amp; B  --&gt; |date + jobID +hostname + end| D[Reads lengths]
 

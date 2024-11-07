@@ -1,0 +1,55 @@
+---
+author: Duarte CMD
+date: 2024-11-06
+format:
+	html: default
+---
+
+# introdução ao Nextflow
+
+nextflow é uma DSL projetada para criar pipelines de bioinformática, o qual por meio de processos, canais e parãmetros consegue orquestrar uma pipeline complexa e paralelizada.
+
+## Processos e canias
+
+processos é uma função do nextflow, as quais rodam independentemente, os quais podem ser feitos em qualquer linguagem, como bash, python e R. Por exemplo, um processo poderia ser descrito como rodar uma ferramenta. Canais são formas de armezenar resultados, como caminhos, pastas, valores, arquivos fastq, os quais serão enviados para os processos, assim conectando os mesmos.
+
+### Estrutura básica de um processo
+
+````
+
+process nome {
+
+	input:
+	<tipo de entrada> <valor da entrada> from <origem> // isso é so usado pra canais
+	<tipo de entrada> valor // é usado para parametros
+	< 
+	// todos os valores no input devem ser declarados fora do processo ao contrario dos valores para saida (output) que são declarados no processo
+
+	output:
+	<tipo de sainda> <file de saida> // ou
+	<tipo de sainda <file valor de saida>  into <canal>
+
+	
+	script:
+	"""
+	a execussão do script
+
+	"""
+
+}
+
+
+workflow{
+	nome()
+}
+
+´´´´
+###  Tipos de entrada
+
+
+### tipos de saida
+
+* pq não precisa epecificar
+
+### o uso do from e canais
+

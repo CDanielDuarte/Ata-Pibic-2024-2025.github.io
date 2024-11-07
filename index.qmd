@@ -2,6 +2,8 @@
 title: "Ata Bioinfo"
 listing:
   contents: posts
+  feed:
+    items: 5
   sort: "date desc"
   type: default
   categories: true
