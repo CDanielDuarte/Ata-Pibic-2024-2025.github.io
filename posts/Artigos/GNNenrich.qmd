@@ -1,0 +1,204 @@
+# Relatório – Enriquecimento Funcional Baseado em Redes Neurais em Bioinformática
+
+## Introdução
+
+A bioinformática moderna utiliza diferentes estratégias computacionais para interpretar grandes conjuntos de dados biológicos, especialmente aqueles derivados de transcriptômica, proteômica e genômica. Uma das etapas mais importantes dessas análises é o enriquecimento funcional, utilizado para identificar processos biológicos, vias metabólicas e funções celulares associadas a listas de genes ou proteínas obtidas experimentalmente.
+
+O artigo analisado, “[GNNenrich: a novel method for pathway enrichment analysis based on graph neural network](https://academic.oup.com/bioinformatics/article/41/9/btaf478/8249232?utm_source=advanceaccess&utm_campaign=bioinformatics&utm_medium=email)”, publicado na revista Bioinformatics, apresenta uma nova abordagem baseada em redes neurais em grafos (Graph Neural Networks – GNNs) para análise de enriquecimento funcional. O estudo propõe integrar interações proteína-proteína (PPIs) e propriedades estruturais das proteínas para melhorar a interpretação biológica dos dados.
+
+---
+
+# Problema abordado
+
+Os métodos tradicionais de enriquecimento funcional, como ORA (Over-Representation Analysis) e GSEA (Gene Set Enrichment Analysis), geralmente utilizam apenas o número de genes compartilhados entre uma lista de genes de interesse e vias biológicas previamente anotadas.
+
+Apesar de eficientes, esses métodos possuem limitações importantes:
+
+* Ignoram a topologia das redes biológicas;
+* Não consideram interações proteína-proteína;
+* Tratam todos os genes com o mesmo peso;
+* Podem deixar de identificar relações biológicas indiretas.
+
+O artigo propõe o GNNenrich justamente para resolver esse problema. O método utiliza Graph Neural Networks para incorporar:
+
+* propriedades das sequências de aminoácidos;
+* interações proteína-proteína;
+* estrutura de redes biológicas;
+* correlação funcional entre proteínas.
+
+Isso permite detectar enriquecimentos funcionais mesmo quando não existe grande sobreposição direta de genes entre a amostra e as vias biológicas.
+
+---
+
+# Definições importantes da área
+
+## Enriquecimento funcional
+
+É uma técnica estatística utilizada para descobrir se determinados processos biológicos, vias metabólicas ou funções celulares aparecem mais frequentemente do que o esperado em uma lista de genes ou proteínas.
+
+## ORA (Over-Representation Analysis)
+
+Método baseado em testes estatísticos que avalia se há sobreposição significativa entre genes de interesse e conjuntos funcionais previamente anotados.
+
+Exemplo de ferramentas:
+
+* g:Profiler
+* DAVID
+* Enrichr
+
+## GSEA (Gene Set Enrichment Analysis)
+
+Método que utiliza rankings de expressão gênica para avaliar enriquecimento sem precisar definir um corte rígido de genes diferencialmente expressos.
+
+## PPI (Protein-Protein Interaction)
+
+Interações físicas ou funcionais entre proteínas. Essas interações ajudam a compreender:
+
+* mecanismos celulares;
+* vias metabólicas;
+* doenças;
+* regulação gênica.
+
+## Graph Neural Networks (GNN)
+
+Modelos de inteligência artificial desenvolvidos para trabalhar com estruturas em grafos, muito úteis para:
+
+* redes biológicas;
+* redes sociais;
+* sistemas complexos.
+
+No contexto biológico, proteínas são representadas como nós e suas interações como arestas.
+
+---
+
+# Por que é feita a busca por enriquecimento funcional?
+
+A análise de enriquecimento é essencial porque listas grandes de genes isoladamente possuem pouca interpretação biológica.
+
+O enriquecimento funcional permite:
+
+* identificar processos celulares alterados;
+* compreender mecanismos moleculares;
+* descobrir biomarcadores;
+* investigar doenças;
+* interpretar experimentos de RNA-seq;
+* priorizar genes relevantes;
+* encontrar possíveis alvos terapêuticos.
+
+Em estudos de transcriptômica, por exemplo, após identificar genes diferencialmente expressos, o enriquecimento funcional ajuda a responder:
+
+“Quais processos biológicos estão sendo afetados?”
+
+No artigo estudado, o GNNenrich foi aplicado em:
+
+* Doença de Parkinson;
+* Câncer gástrico.
+
+Os resultados mostraram que o método conseguiu detectar vias relacionadas às doenças utilizando tanto sobreposição gênica quanto densidade de interações proteína-proteína.
+
+---
+
+# Artigos de revisão encontrados
+
+## 1. Huang DW, Sherman BT, Lempicki RA. (2009)
+
+Bioinformatics enrichment tools: paths toward the comprehensive functional analysis of large gene lists.
+
+Discussão clássica sobre ferramentas de enriquecimento funcional e limitações dos métodos tradicionais.
+
+---
+
+## 2. Geistlinger L et al. (2021)
+
+Toward a gold standard for benchmarking gene set enrichment analysis.
+
+Revisão sobre benchmarking de métodos de enriquecimento gênico.
+
+---
+
+## 3. Zhang XM et al. (2021)
+
+Graph neural networks and their current applications in bioinformatics.
+
+Revisão sobre aplicações de GNN em bioinformática.
+
+---
+
+## 4. Subramanian A et al. (2005)
+
+Gene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles.
+
+Artigo fundamental que introduziu o método GSEA.
+
+---
+
+## 5. Szklarczyk D et al. (2019)
+
+STRING v11: protein–protein association networks with increased coverage.
+
+Descrição da base de dados STRING para interações proteína-proteína.
+
+---
+
+# Softwares utilizados em enriquecimento funcional e bioinformática
+
+| Software     | Link                                                                                                                       | Linguagem  | Organismos modelo apenas? | Interface        |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------- | ---------- | ------------------------- | ---------------- |
+| GNNenrich    | [https://gitlab.com/cnrgh/gnn-enrich/gnn-enrich-article-demo](https://gitlab.com/cnrgh/gnn-enrich/gnn-enrich-article-demo) | Python     | Não                       | Linha de comando |
+| g:Profiler   | [https://biit.cs.ut.ee/gprofiler](https://biit.cs.ut.ee/gprofiler)                                                         | R / Python | Não                       | Web              |
+| EnrichNet    | [https://www.enrichnet.org](https://www.enrichnet.org)                                                                     | Java       | Não                       | Web              |
+| STRING       | [https://string-db.org](https://string-db.org)                                                                             | Java / SQL | Não                       | Web              |
+| Cytoscape    | [https://cytoscape.org](https://cytoscape.org)                                                                             | Java       | Não                       | Desktop          |
+| DAVID        | [https://david.ncifcrf.gov](https://david.ncifcrf.gov)                                                                     | Web-based  | Não                       | Web              |
+| Enrichr      | [https://maayanlab.cloud/Enrichr](https://maayanlab.cloud/Enrichr)                                                         | Python     | Não                       | Web              |
+| GSEA         | [https://www.gsea-msigdb.org](https://www.gsea-msigdb.org)                                                                 | Java       | Não                       | Desktop          |
+| Snakemake    | [https://snakemake.github.io](https://snakemake.github.io)                                                                 | Python     | Não                       | Linha de comando |
+| STAR aligner | [https://github.com/alexdobin/STAR](https://github.com/alexdobin/STAR)                                                     | C++        | Não                       | Linha de comando |
+
+---
+
+# O que aprendi com o artigo
+
+O artigo mostrou como inteligência artificial e aprendizado profundo estão transformando a bioinformática moderna. Antes, os métodos de enriquecimento dependiam principalmente da sobreposição de genes. O GNNenrich demonstra que é possível integrar:
+
+* estrutura proteica;
+* redes biológicas;
+* aprendizado profundo;
+* interações proteína-proteína.
+
+Aprendi também que:
+
+* Graph Neural Networks possuem grande potencial em biologia de sistemas;
+* PPIs podem revelar relações funcionais invisíveis para métodos tradicionais;
+* enriquecimento funcional pode ser melhorado usando topologia de redes;
+* bancos de dados como STRING são fundamentais para modelos modernos;
+* métodos híbridos entre IA e biologia estão se tornando tendência na bioinformática.
+
+Outro ponto importante foi compreender que diferentes valores do parâmetro β no GNNenrich permitem equilibrar:
+
+* importância da sobreposição gênica;
+* importância das interações proteína-proteína.
+
+Isso fornece maior flexibilidade para diferentes cenários biológicos.
+
+Além disso, o estudo reforçou a importância de pipelines reprodutíveis e ferramentas modernas em bioinformática, como:
+
+* Snakemake;
+* STAR;
+* bancos de dados de anotação;
+* aprendizado profundo aplicado à biologia.
+
+---
+
+# Conclusão
+
+A análise de enriquecimento funcional continua sendo uma das ferramentas mais importantes da bioinformática para interpretação de dados ômicos. O surgimento de métodos baseados em Graph Neural Networks representa uma evolução importante da área, permitindo integrar informações topológicas e interações moleculares.
+
+O GNNenrich mostrou resultados promissores ao combinar aprendizado profundo, redes biológicas e enriquecimento funcional, oferecendo novas perspectivas para interpretação de doenças complexas e dados de transcriptômica.
+
+Essas abordagens provavelmente terão papel central no futuro da bioinformática, especialmente em áreas como:
+
+* medicina de precisão;
+* biologia de sistemas;
+* análise multiômica;
+* descoberta de biomarcadores.

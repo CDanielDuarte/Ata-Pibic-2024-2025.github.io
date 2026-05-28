@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Carlos Daniel">
-<meta name="dcterms.date" content="2024-05-22">
 
-<title>Ata Bioinfo - Teste com condigo em python</title>
+<title>Ata Bioinfo</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,59 +20,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
-<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../../">
-<script src="../../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -104,7 +68,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<link rel="stylesheet" href="../../../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -114,7 +78,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Ata Bioinfo</span>
     </a>
   </div>
@@ -125,7 +89,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -146,39 +110,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Teste com condigo em python</h1>
-                                <div class="quarto-categories">
-                <div class="quarto-category">testes</div>
-                <div class="quarto-category">python</div>
-              </div>
-                  </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Carlos Daniel </p>
-            </div>
-    </div>
-      
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">May 22, 2024</p>
-      </div>
-    </div>
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
@@ -188,18 +120,263 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-
-<section id="olá-mundo" class="level1">
-<h1>olá mundo</h1>
-<div id="239ad8ff" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'hello world'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>hello world</code></pre>
-</div>
-</div>
-<p>daniel@DESKTOP-J3U8KOO:~/ATA_bioinfo_2024$ quarto preview Terminating existing preview server….DONE</p>
-<p>Preparing to preview</p>
-<p>Watching files for changes Browse at http://localhost:5941/ /usr/bin/xdg-open: 882: x-www-browser: not found /usr/bin/xdg-open: 882: firefox: not found /usr/bin/xdg-open: 882: iceweasel: not found /usr/bin/xdg-open: 882: seamonkey: not found /usr/bin/xdg-open: 882: mozilla: not found /usr/bin/xdg-open: 882: epiphany: not found /usr/bin/xdg-open: 882: konqueror: not found /usr/bin/xdg-open: 882: chromium: not found /usr/bin/xdg-open: 882: chromium-browser: not found /usr/bin/xdg-open: 882: google-chrome: not found /usr/bin/xdg-open: 882: www-browser: not found /usr/bin/xdg-open: 882: links2: not found /usr/bin/xdg-open: 882: elinks: not found /usr/bin/xdg-open: 882: links: not found /usr/bin/xdg-open: 882: lynx: not found /usr/bin/xdg-open: 882: w3m: not found xdg-open: no method available for opening ‘http://localhost:5941/’ GET: /</p>
+<section id="relatório-enriquecimento-funcional-baseado-em-redes-neurais-em-bioinformática" class="level1">
+<h1>Relatório – Enriquecimento Funcional Baseado em Redes Neurais em Bioinformática</h1>
+<section id="introdução" class="level2">
+<h2 class="anchored" data-anchor-id="introdução">Introdução</h2>
+<p>A bioinformática moderna utiliza diferentes estratégias computacionais para interpretar grandes conjuntos de dados biológicos, especialmente aqueles derivados de transcriptômica, proteômica e genômica. Uma das etapas mais importantes dessas análises é o enriquecimento funcional, utilizado para identificar processos biológicos, vias metabólicas e funções celulares associadas a listas de genes ou proteínas obtidas experimentalmente.</p>
+<p>O artigo analisado, “GNNenrich: a novel method for pathway enrichment analysis based on graph neural network”, publicado na revista Bioinformatics, apresenta uma nova abordagem baseada em redes neurais em grafos (Graph Neural Networks – GNNs) para análise de enriquecimento funcional. O estudo propõe integrar interações proteína-proteína (PPIs) e propriedades estruturais das proteínas para melhorar a interpretação biológica dos dados.</p>
+<hr>
+</section>
+</section>
+<section id="problema-abordado" class="level1">
+<h1>Problema abordado</h1>
+<p>Os métodos tradicionais de enriquecimento funcional, como ORA (Over-Representation Analysis) e GSEA (Gene Set Enrichment Analysis), geralmente utilizam apenas o número de genes compartilhados entre uma lista de genes de interesse e vias biológicas previamente anotadas.</p>
+<p>Apesar de eficientes, esses métodos possuem limitações importantes:</p>
+<ul>
+<li>Ignoram a topologia das redes biológicas;</li>
+<li>Não consideram interações proteína-proteína;</li>
+<li>Tratam todos os genes com o mesmo peso;</li>
+<li>Podem deixar de identificar relações biológicas indiretas.</li>
+</ul>
+<p>O artigo propõe o GNNenrich justamente para resolver esse problema. O método utiliza Graph Neural Networks para incorporar:</p>
+<ul>
+<li>propriedades das sequências de aminoácidos;</li>
+<li>interações proteína-proteína;</li>
+<li>estrutura de redes biológicas;</li>
+<li>correlação funcional entre proteínas.</li>
+</ul>
+<p>Isso permite detectar enriquecimentos funcionais mesmo quando não existe grande sobreposição direta de genes entre a amostra e as vias biológicas.</p>
+<hr>
+</section>
+<section id="definições-importantes-da-área" class="level1">
+<h1>Definições importantes da área</h1>
+<section id="enriquecimento-funcional" class="level2">
+<h2 class="anchored" data-anchor-id="enriquecimento-funcional">Enriquecimento funcional</h2>
+<p>É uma técnica estatística utilizada para descobrir se determinados processos biológicos, vias metabólicas ou funções celulares aparecem mais frequentemente do que o esperado em uma lista de genes ou proteínas.</p>
+</section>
+<section id="ora-over-representation-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="ora-over-representation-analysis">ORA (Over-Representation Analysis)</h2>
+<p>Método baseado em testes estatísticos que avalia se há sobreposição significativa entre genes de interesse e conjuntos funcionais previamente anotados.</p>
+<p>Exemplo de ferramentas:</p>
+<ul>
+<li>g:Profiler</li>
+<li>DAVID</li>
+<li>Enrichr</li>
+</ul>
+</section>
+<section id="gsea-gene-set-enrichment-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="gsea-gene-set-enrichment-analysis">GSEA (Gene Set Enrichment Analysis)</h2>
+<p>Método que utiliza rankings de expressão gênica para avaliar enriquecimento sem precisar definir um corte rígido de genes diferencialmente expressos.</p>
+</section>
+<section id="ppi-protein-protein-interaction" class="level2">
+<h2 class="anchored" data-anchor-id="ppi-protein-protein-interaction">PPI (Protein-Protein Interaction)</h2>
+<p>Interações físicas ou funcionais entre proteínas. Essas interações ajudam a compreender:</p>
+<ul>
+<li>mecanismos celulares;</li>
+<li>vias metabólicas;</li>
+<li>doenças;</li>
+<li>regulação gênica.</li>
+</ul>
+</section>
+<section id="graph-neural-networks-gnn" class="level2">
+<h2 class="anchored" data-anchor-id="graph-neural-networks-gnn">Graph Neural Networks (GNN)</h2>
+<p>Modelos de inteligência artificial desenvolvidos para trabalhar com estruturas em grafos, muito úteis para:</p>
+<ul>
+<li>redes biológicas;</li>
+<li>redes sociais;</li>
+<li>sistemas complexos.</li>
+</ul>
+<p>No contexto biológico, proteínas são representadas como nós e suas interações como arestas.</p>
+<hr>
+</section>
+</section>
+<section id="por-que-é-feita-a-busca-por-enriquecimento-funcional" class="level1">
+<h1>Por que é feita a busca por enriquecimento funcional?</h1>
+<p>A análise de enriquecimento é essencial porque listas grandes de genes isoladamente possuem pouca interpretação biológica.</p>
+<p>O enriquecimento funcional permite:</p>
+<ul>
+<li>identificar processos celulares alterados;</li>
+<li>compreender mecanismos moleculares;</li>
+<li>descobrir biomarcadores;</li>
+<li>investigar doenças;</li>
+<li>interpretar experimentos de RNA-seq;</li>
+<li>priorizar genes relevantes;</li>
+<li>encontrar possíveis alvos terapêuticos.</li>
+</ul>
+<p>Em estudos de transcriptômica, por exemplo, após identificar genes diferencialmente expressos, o enriquecimento funcional ajuda a responder:</p>
+<p>“Quais processos biológicos estão sendo afetados?”</p>
+<p>No artigo estudado, o GNNenrich foi aplicado em:</p>
+<ul>
+<li>Doença de Parkinson;</li>
+<li>Câncer gástrico.</li>
+</ul>
+<p>Os resultados mostraram que o método conseguiu detectar vias relacionadas às doenças utilizando tanto sobreposição gênica quanto densidade de interações proteína-proteína.</p>
+<hr>
+</section>
+<section id="artigos-de-revisão-encontrados" class="level1">
+<h1>Artigos de revisão encontrados</h1>
+<section id="huang-dw-sherman-bt-lempicki-ra.-2009" class="level2">
+<h2 class="anchored" data-anchor-id="huang-dw-sherman-bt-lempicki-ra.-2009">1. Huang DW, Sherman BT, Lempicki RA. (2009)</h2>
+<p>Bioinformatics enrichment tools: paths toward the comprehensive functional analysis of large gene lists.</p>
+<p>Discussão clássica sobre ferramentas de enriquecimento funcional e limitações dos métodos tradicionais.</p>
+<hr>
+</section>
+<section id="geistlinger-l-et-al.-2021" class="level2">
+<h2 class="anchored" data-anchor-id="geistlinger-l-et-al.-2021">2. Geistlinger L et al.&nbsp;(2021)</h2>
+<p>Toward a gold standard for benchmarking gene set enrichment analysis.</p>
+<p>Revisão sobre benchmarking de métodos de enriquecimento gênico.</p>
+<hr>
+</section>
+<section id="zhang-xm-et-al.-2021" class="level2">
+<h2 class="anchored" data-anchor-id="zhang-xm-et-al.-2021">3. Zhang XM et al.&nbsp;(2021)</h2>
+<p>Graph neural networks and their current applications in bioinformatics.</p>
+<p>Revisão sobre aplicações de GNN em bioinformática.</p>
+<hr>
+</section>
+<section id="subramanian-a-et-al.-2005" class="level2">
+<h2 class="anchored" data-anchor-id="subramanian-a-et-al.-2005">4. Subramanian A et al.&nbsp;(2005)</h2>
+<p>Gene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles.</p>
+<p>Artigo fundamental que introduziu o método GSEA.</p>
+<hr>
+</section>
+<section id="szklarczyk-d-et-al.-2019" class="level2">
+<h2 class="anchored" data-anchor-id="szklarczyk-d-et-al.-2019">5. Szklarczyk D et al.&nbsp;(2019)</h2>
+<p>STRING v11: protein–protein association networks with increased coverage.</p>
+<p>Descrição da base de dados STRING para interações proteína-proteína.</p>
+<hr>
+</section>
+</section>
+<section id="softwares-utilizados-em-enriquecimento-funcional-e-bioinformática" class="level1">
+<h1>Softwares utilizados em enriquecimento funcional e bioinformática</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Software</th>
+<th>Link</th>
+<th>Linguagem</th>
+<th>Organismos modelo apenas?</th>
+<th>Interface</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>GNNenrich</td>
+<td><a href="https://gitlab.com/cnrgh/gnn-enrich/gnn-enrich-article-demo">https://gitlab.com/cnrgh/gnn-enrich/gnn-enrich-article-demo</a></td>
+<td>Python</td>
+<td>Não</td>
+<td>Linha de comando</td>
+</tr>
+<tr class="even">
+<td>g:Profiler</td>
+<td><a href="https://biit.cs.ut.ee/gprofiler">https://biit.cs.ut.ee/gprofiler</a></td>
+<td>R / Python</td>
+<td>Não</td>
+<td>Web</td>
+</tr>
+<tr class="odd">
+<td>EnrichNet</td>
+<td><a href="https://www.enrichnet.org">https://www.enrichnet.org</a></td>
+<td>Java</td>
+<td>Não</td>
+<td>Web</td>
+</tr>
+<tr class="even">
+<td>STRING</td>
+<td><a href="https://string-db.org">https://string-db.org</a></td>
+<td>Java / SQL</td>
+<td>Não</td>
+<td>Web</td>
+</tr>
+<tr class="odd">
+<td>Cytoscape</td>
+<td><a href="https://cytoscape.org">https://cytoscape.org</a></td>
+<td>Java</td>
+<td>Não</td>
+<td>Desktop</td>
+</tr>
+<tr class="even">
+<td>DAVID</td>
+<td><a href="https://david.ncifcrf.gov">https://david.ncifcrf.gov</a></td>
+<td>Web-based</td>
+<td>Não</td>
+<td>Web</td>
+</tr>
+<tr class="odd">
+<td>Enrichr</td>
+<td><a href="https://maayanlab.cloud/Enrichr">https://maayanlab.cloud/Enrichr</a></td>
+<td>Python</td>
+<td>Não</td>
+<td>Web</td>
+</tr>
+<tr class="even">
+<td>GSEA</td>
+<td><a href="https://www.gsea-msigdb.org">https://www.gsea-msigdb.org</a></td>
+<td>Java</td>
+<td>Não</td>
+<td>Desktop</td>
+</tr>
+<tr class="odd">
+<td>Snakemake</td>
+<td><a href="https://snakemake.github.io">https://snakemake.github.io</a></td>
+<td>Python</td>
+<td>Não</td>
+<td>Linha de comando</td>
+</tr>
+<tr class="even">
+<td>STAR aligner</td>
+<td><a href="https://github.com/alexdobin/STAR">https://github.com/alexdobin/STAR</a></td>
+<td>C++</td>
+<td>Não</td>
+<td>Linha de comando</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="o-que-aprendi-com-o-artigo" class="level1">
+<h1>O que aprendi com o artigo</h1>
+<p>O artigo mostrou como inteligência artificial e aprendizado profundo estão transformando a bioinformática moderna. Antes, os métodos de enriquecimento dependiam principalmente da sobreposição de genes. O GNNenrich demonstra que é possível integrar:</p>
+<ul>
+<li>estrutura proteica;</li>
+<li>redes biológicas;</li>
+<li>aprendizado profundo;</li>
+<li>interações proteína-proteína.</li>
+</ul>
+<p>Aprendi também que:</p>
+<ul>
+<li>Graph Neural Networks possuem grande potencial em biologia de sistemas;</li>
+<li>PPIs podem revelar relações funcionais invisíveis para métodos tradicionais;</li>
+<li>enriquecimento funcional pode ser melhorado usando topologia de redes;</li>
+<li>bancos de dados como STRING são fundamentais para modelos modernos;</li>
+<li>métodos híbridos entre IA e biologia estão se tornando tendência na bioinformática.</li>
+</ul>
+<p>Outro ponto importante foi compreender que diferentes valores do parâmetro β no GNNenrich permitem equilibrar:</p>
+<ul>
+<li>importância da sobreposição gênica;</li>
+<li>importância das interações proteína-proteína.</li>
+</ul>
+<p>Isso fornece maior flexibilidade para diferentes cenários biológicos.</p>
+<p>Além disso, o estudo reforçou a importância de pipelines reprodutíveis e ferramentas modernas em bioinformática, como:</p>
+<ul>
+<li>Snakemake;</li>
+<li>STAR;</li>
+<li>bancos de dados de anotação;</li>
+<li>aprendizado profundo aplicado à biologia.</li>
+</ul>
+<hr>
+</section>
+<section id="conclusão" class="level1">
+<h1>Conclusão</h1>
+<p>A análise de enriquecimento funcional continua sendo uma das ferramentas mais importantes da bioinformática para interpretação de dados ômicos. O surgimento de métodos baseados em Graph Neural Networks representa uma evolução importante da área, permitindo integrar informações topológicas e interações moleculares.</p>
+<p>O GNNenrich mostrou resultados promissores ao combinar aprendizado profundo, redes biológicas e enriquecimento funcional, oferecendo novas perspectivas para interpretação de doenças complexas e dados de transcriptômica.</p>
+<p>Essas abordagens provavelmente terão papel central no futuro da bioinformática, especialmente em áreas como:</p>
+<ul>
+<li>medicina de precisão;</li>
+<li>biologia de sistemas;</li>
+<li>análise multiômica;</li>
+<li>descoberta de biomarcadores.</li>
+</ul>
 
 
 </section>

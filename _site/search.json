@@ -158,7 +158,7 @@
     "href": "index.html",
     "title": "Ata Bioinfo",
     "section": "",
-    "text": "Tmux\n\n\n\n\n\n\n\n\n\n\n\nOct 22, 2024\n\n\nDuarte CMD\n\n\n\n\n\n\n\n\n\n\n\n\nimproving quality of a pipeline\n\n\n\n\n\n\nNextflow\n\n\n\n\n\n\n\n\n\nOct 7, 2024\n\n\nDuarte CDM\n\n\n\n\n\n\n\n\n\n\n\n\nRna-seq\n\n\n\n\n\n\nSequenciamento\n\n\nTranscriptoma\n\n\n\n\n\n\n\n\n\nJul 1, 2024\n\n\nCarlos Daniel M Duarte\n\n\n\n\n\n\n\n\n\n\n\n\nSequênciamento de teceira geração, PacBIO\n\n\n\n\n\n\nSequenciamento\n\n\n\n\n\n\n\n\n\nJun 25, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nSequenciamento de primeira geração\n\n\n\n\n\n\nSequenciamento\n\n\n\n\n\n\n\n\n\nJun 25, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nSequênciamento de terceira geração / Nanopore\n\n\n\n\n\n\nSequenciamento\n\n\n\n\n\n\n\n\n\nJun 18, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nFundamentos do NGS\n\n\n\n\n\n\nSequenciamento\n\n\n\n\n\n\n\n\n\nJun 3, 2024\n\n\n\n\n\n\n\n\n\n\n\n\niris\n\n\n\n\n\n\ntestes\n\n\npython\n\n\n\n\n\n\n\n\n\nMay 27, 2024\n\n\nCarlos Daniel\n\n\n\n\n\n\n\n\n\n\n\n\nTeste com condigo em python\n\n\n\n\n\n\ntestes\n\n\npython\n\n\n\n\n\n\n\n\n\nMay 22, 2024\n\n\nCarlos Daniel\n\n\n\n\n\n\n\n\n\n\n\n\nTeste com condigo em R\n\n\n\n\n\n\ntestes\n\n\n\n\n\n\n\n\n\nMay 22, 2024\n\n\nCalos Daniel\n\n\n\n\n\n\nNo matching items"
+    "text": "Relatório – Enriquecimento Funcional Baseado em Redes Neurais em Bioinformática\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTmux\n\n\n\n\n\n\n\n\n\n\n\nOct 22, 2024\n\n\nDuarte CMD\n\n\n\n\n\n\n\n\n\n\n\n\nimproving quality of a pipeline\n\n\n\n\n\n\nNextflow\n\n\n\n\n\n\n\n\n\nOct 7, 2024\n\n\nDuarte CDM\n\n\n\n\n\n\n\n\n\n\n\n\nRna-seq\n\n\n\n\n\n\nSequenciamento\n\n\nTranscriptoma\n\n\n\n\n\n\n\n\n\nJul 1, 2024\n\n\nCarlos Daniel M Duarte\n\n\n\n\n\n\n\n\n\n\n\n\nSequênciamento de teceira geração, PacBIO\n\n\n\n\n\n\nSequenciamento\n\n\n\n\n\n\n\n\n\nJun 25, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nSequenciamento de primeira geração\n\n\n\n\n\n\nSequenciamento\n\n\n\n\n\n\n\n\n\nJun 25, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nSequênciamento de terceira geração / Nanopore\n\n\n\n\n\n\nSequenciamento\n\n\n\n\n\n\n\n\n\nJun 18, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nFundamentos do NGS\n\n\n\n\n\n\nSequenciamento\n\n\n\n\n\n\n\n\n\nJun 3, 2024\n\n\n\n\n\n\n\n\n\n\n\n\niris\n\n\n\n\n\n\ntestes\n\n\npython\n\n\n\n\n\n\n\n\n\nMay 27, 2024\n\n\nCarlos Daniel\n\n\n\n\n\n\n\n\n\n\n\n\nTeste com condigo em R\n\n\n\n\n\n\ntestes\n\n\n\n\n\n\n\n\n\nMay 22, 2024\n\n\nCalos Daniel\n\n\n\n\n\n\n\n\n\n\n\n\nTeste com condigo em python\n\n\n\n\n\n\ntestes\n\n\npython\n\n\n\n\n\n\n\n\n\nMay 22, 2024\n\n\nCarlos Daniel\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/tools/tmux.html",
@@ -166,5 +166,173 @@
     "title": "Tmux",
     "section": "",
     "text": "O quê é o Tmux\nTmux it’s a teminal multiplex, witch means that it could persue differents taks at the same time. That tool brings feactures like, saving point and infinit split windows.\n\n\nPra quê serve\nThis tool can make a bount of differente conections to server, like SSH conections.\n\n\nUsage\nTmuz is base commands follow one master keey [ctl + b] + command. For exemple:\n[ctl + b] + c = make a new windown\n[ctl + b] + % = make a new vertical split\n[ctl + b] + ” = make a new horizontal split\n\n\nReferências bibliogŕaficas\n\nA beginner’s guide to tmux\nGetting Started with Tmux [Beginner’s Guide]\nTmux Documetation"
+  },
+  {
+    "objectID": "posts/Artigos/IA.html",
+    "href": "posts/Artigos/IA.html",
+    "title": "Relatório – Enriquecimento Funcional Baseado em Redes Neurais em Bioinformática",
+    "section": "",
+    "text": "A bioinformática moderna utiliza diferentes estratégias computacionais para interpretar grandes conjuntos de dados biológicos, especialmente aqueles derivados de transcriptômica, proteômica e genômica. Uma das etapas mais importantes dessas análises é o enriquecimento funcional, utilizado para identificar processos biológicos, vias metabólicas e funções celulares associadas a listas de genes ou proteínas obtidas experimentalmente.\nO artigo analisado, “GNNenrich: a novel method for pathway enrichment analysis based on graph neural network”, publicado na revista Bioinformatics, apresenta uma nova abordagem baseada em redes neurais em grafos (Graph Neural Networks – GNNs) para análise de enriquecimento funcional. O estudo propõe integrar interações proteína-proteína (PPIs) e propriedades estruturais das proteínas para melhorar a interpretação biológica dos dados."
+  },
+  {
+    "objectID": "posts/Artigos/IA.html#introdução",
+    "href": "posts/Artigos/IA.html#introdução",
+    "title": "Relatório – Enriquecimento Funcional Baseado em Redes Neurais em Bioinformática",
+    "section": "",
+    "text": "A bioinformática moderna utiliza diferentes estratégias computacionais para interpretar grandes conjuntos de dados biológicos, especialmente aqueles derivados de transcriptômica, proteômica e genômica. Uma das etapas mais importantes dessas análises é o enriquecimento funcional, utilizado para identificar processos biológicos, vias metabólicas e funções celulares associadas a listas de genes ou proteínas obtidas experimentalmente.\nO artigo analisado, “GNNenrich: a novel method for pathway enrichment analysis based on graph neural network”, publicado na revista Bioinformatics, apresenta uma nova abordagem baseada em redes neurais em grafos (Graph Neural Networks – GNNs) para análise de enriquecimento funcional. O estudo propõe integrar interações proteína-proteína (PPIs) e propriedades estruturais das proteínas para melhorar a interpretação biológica dos dados."
+  },
+  {
+    "objectID": "posts/Artigos/IA.html#enriquecimento-funcional",
+    "href": "posts/Artigos/IA.html#enriquecimento-funcional",
+    "title": "Relatório – Enriquecimento Funcional Baseado em Redes Neurais em Bioinformática",
+    "section": "Enriquecimento funcional",
+    "text": "Enriquecimento funcional\nÉ uma técnica estatística utilizada para descobrir se determinados processos biológicos, vias metabólicas ou funções celulares aparecem mais frequentemente do que o esperado em uma lista de genes ou proteínas."
+  },
+  {
+    "objectID": "posts/Artigos/IA.html#ora-over-representation-analysis",
+    "href": "posts/Artigos/IA.html#ora-over-representation-analysis",
+    "title": "Relatório – Enriquecimento Funcional Baseado em Redes Neurais em Bioinformática",
+    "section": "ORA (Over-Representation Analysis)",
+    "text": "ORA (Over-Representation Analysis)\nMétodo baseado em testes estatísticos que avalia se há sobreposição significativa entre genes de interesse e conjuntos funcionais previamente anotados.\nExemplo de ferramentas:\n\ng:Profiler\nDAVID\nEnrichr"
+  },
+  {
+    "objectID": "posts/Artigos/IA.html#gsea-gene-set-enrichment-analysis",
+    "href": "posts/Artigos/IA.html#gsea-gene-set-enrichment-analysis",
+    "title": "Relatório – Enriquecimento Funcional Baseado em Redes Neurais em Bioinformática",
+    "section": "GSEA (Gene Set Enrichment Analysis)",
+    "text": "GSEA (Gene Set Enrichment Analysis)\nMétodo que utiliza rankings de expressão gênica para avaliar enriquecimento sem precisar definir um corte rígido de genes diferencialmente expressos."
+  },
+  {
+    "objectID": "posts/Artigos/IA.html#ppi-protein-protein-interaction",
+    "href": "posts/Artigos/IA.html#ppi-protein-protein-interaction",
+    "title": "Relatório – Enriquecimento Funcional Baseado em Redes Neurais em Bioinformática",
+    "section": "PPI (Protein-Protein Interaction)",
+    "text": "PPI (Protein-Protein Interaction)\nInterações físicas ou funcionais entre proteínas. Essas interações ajudam a compreender:\n\nmecanismos celulares;\nvias metabólicas;\ndoenças;\nregulação gênica."
+  },
+  {
+    "objectID": "posts/Artigos/IA.html#graph-neural-networks-gnn",
+    "href": "posts/Artigos/IA.html#graph-neural-networks-gnn",
+    "title": "Relatório – Enriquecimento Funcional Baseado em Redes Neurais em Bioinformática",
+    "section": "Graph Neural Networks (GNN)",
+    "text": "Graph Neural Networks (GNN)\nModelos de inteligência artificial desenvolvidos para trabalhar com estruturas em grafos, muito úteis para:\n\nredes biológicas;\nredes sociais;\nsistemas complexos.\n\nNo contexto biológico, proteínas são representadas como nós e suas interações como arestas."
+  },
+  {
+    "objectID": "posts/Artigos/IA.html#huang-dw-sherman-bt-lempicki-ra.-2009",
+    "href": "posts/Artigos/IA.html#huang-dw-sherman-bt-lempicki-ra.-2009",
+    "title": "Relatório – Enriquecimento Funcional Baseado em Redes Neurais em Bioinformática",
+    "section": "1. Huang DW, Sherman BT, Lempicki RA. (2009)",
+    "text": "1. Huang DW, Sherman BT, Lempicki RA. (2009)\nBioinformatics enrichment tools: paths toward the comprehensive functional analysis of large gene lists.\nDiscussão clássica sobre ferramentas de enriquecimento funcional e limitações dos métodos tradicionais."
+  },
+  {
+    "objectID": "posts/Artigos/IA.html#geistlinger-l-et-al.-2021",
+    "href": "posts/Artigos/IA.html#geistlinger-l-et-al.-2021",
+    "title": "Relatório – Enriquecimento Funcional Baseado em Redes Neurais em Bioinformática",
+    "section": "2. Geistlinger L et al. (2021)",
+    "text": "2. Geistlinger L et al. (2021)\nToward a gold standard for benchmarking gene set enrichment analysis.\nRevisão sobre benchmarking de métodos de enriquecimento gênico."
+  },
+  {
+    "objectID": "posts/Artigos/IA.html#zhang-xm-et-al.-2021",
+    "href": "posts/Artigos/IA.html#zhang-xm-et-al.-2021",
+    "title": "Relatório – Enriquecimento Funcional Baseado em Redes Neurais em Bioinformática",
+    "section": "3. Zhang XM et al. (2021)",
+    "text": "3. Zhang XM et al. (2021)\nGraph neural networks and their current applications in bioinformatics.\nRevisão sobre aplicações de GNN em bioinformática."
+  },
+  {
+    "objectID": "posts/Artigos/IA.html#subramanian-a-et-al.-2005",
+    "href": "posts/Artigos/IA.html#subramanian-a-et-al.-2005",
+    "title": "Relatório – Enriquecimento Funcional Baseado em Redes Neurais em Bioinformática",
+    "section": "4. Subramanian A et al. (2005)",
+    "text": "4. Subramanian A et al. (2005)\nGene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles.\nArtigo fundamental que introduziu o método GSEA."
+  },
+  {
+    "objectID": "posts/Artigos/IA.html#szklarczyk-d-et-al.-2019",
+    "href": "posts/Artigos/IA.html#szklarczyk-d-et-al.-2019",
+    "title": "Relatório – Enriquecimento Funcional Baseado em Redes Neurais em Bioinformática",
+    "section": "5. Szklarczyk D et al. (2019)",
+    "text": "5. Szklarczyk D et al. (2019)\nSTRING v11: protein–protein association networks with increased coverage.\nDescrição da base de dados STRING para interações proteína-proteína."
+  },
+  {
+    "objectID": "posts/Artigos/GNNenrich.html",
+    "href": "posts/Artigos/GNNenrich.html",
+    "title": "Relatório – Enriquecimento Funcional Baseado em Redes Neurais em Bioinformática",
+    "section": "",
+    "text": "A bioinformática moderna utiliza diferentes estratégias computacionais para interpretar grandes conjuntos de dados biológicos, especialmente aqueles derivados de transcriptômica, proteômica e genômica. Uma das etapas mais importantes dessas análises é o enriquecimento funcional, utilizado para identificar processos biológicos, vias metabólicas e funções celulares associadas a listas de genes ou proteínas obtidas experimentalmente.\nO artigo analisado, “GNNenrich: a novel method for pathway enrichment analysis based on graph neural network”, publicado na revista Bioinformatics, apresenta uma nova abordagem baseada em redes neurais em grafos (Graph Neural Networks – GNNs) para análise de enriquecimento funcional. O estudo propõe integrar interações proteína-proteína (PPIs) e propriedades estruturais das proteínas para melhorar a interpretação biológica dos dados."
+  },
+  {
+    "objectID": "posts/Artigos/GNNenrich.html#introdução",
+    "href": "posts/Artigos/GNNenrich.html#introdução",
+    "title": "Relatório – Enriquecimento Funcional Baseado em Redes Neurais em Bioinformática",
+    "section": "",
+    "text": "A bioinformática moderna utiliza diferentes estratégias computacionais para interpretar grandes conjuntos de dados biológicos, especialmente aqueles derivados de transcriptômica, proteômica e genômica. Uma das etapas mais importantes dessas análises é o enriquecimento funcional, utilizado para identificar processos biológicos, vias metabólicas e funções celulares associadas a listas de genes ou proteínas obtidas experimentalmente.\nO artigo analisado, “GNNenrich: a novel method for pathway enrichment analysis based on graph neural network”, publicado na revista Bioinformatics, apresenta uma nova abordagem baseada em redes neurais em grafos (Graph Neural Networks – GNNs) para análise de enriquecimento funcional. O estudo propõe integrar interações proteína-proteína (PPIs) e propriedades estruturais das proteínas para melhorar a interpretação biológica dos dados."
+  },
+  {
+    "objectID": "posts/Artigos/GNNenrich.html#enriquecimento-funcional",
+    "href": "posts/Artigos/GNNenrich.html#enriquecimento-funcional",
+    "title": "Relatório – Enriquecimento Funcional Baseado em Redes Neurais em Bioinformática",
+    "section": "Enriquecimento funcional",
+    "text": "Enriquecimento funcional\nÉ uma técnica estatística utilizada para descobrir se determinados processos biológicos, vias metabólicas ou funções celulares aparecem mais frequentemente do que o esperado em uma lista de genes ou proteínas."
+  },
+  {
+    "objectID": "posts/Artigos/GNNenrich.html#ora-over-representation-analysis",
+    "href": "posts/Artigos/GNNenrich.html#ora-over-representation-analysis",
+    "title": "Relatório – Enriquecimento Funcional Baseado em Redes Neurais em Bioinformática",
+    "section": "ORA (Over-Representation Analysis)",
+    "text": "ORA (Over-Representation Analysis)\nMétodo baseado em testes estatísticos que avalia se há sobreposição significativa entre genes de interesse e conjuntos funcionais previamente anotados.\nExemplo de ferramentas:\n\ng:Profiler\nDAVID\nEnrichr"
+  },
+  {
+    "objectID": "posts/Artigos/GNNenrich.html#gsea-gene-set-enrichment-analysis",
+    "href": "posts/Artigos/GNNenrich.html#gsea-gene-set-enrichment-analysis",
+    "title": "Relatório – Enriquecimento Funcional Baseado em Redes Neurais em Bioinformática",
+    "section": "GSEA (Gene Set Enrichment Analysis)",
+    "text": "GSEA (Gene Set Enrichment Analysis)\nMétodo que utiliza rankings de expressão gênica para avaliar enriquecimento sem precisar definir um corte rígido de genes diferencialmente expressos."
+  },
+  {
+    "objectID": "posts/Artigos/GNNenrich.html#ppi-protein-protein-interaction",
+    "href": "posts/Artigos/GNNenrich.html#ppi-protein-protein-interaction",
+    "title": "Relatório – Enriquecimento Funcional Baseado em Redes Neurais em Bioinformática",
+    "section": "PPI (Protein-Protein Interaction)",
+    "text": "PPI (Protein-Protein Interaction)\nInterações físicas ou funcionais entre proteínas. Essas interações ajudam a compreender:\n\nmecanismos celulares;\nvias metabólicas;\ndoenças;\nregulação gênica."
+  },
+  {
+    "objectID": "posts/Artigos/GNNenrich.html#graph-neural-networks-gnn",
+    "href": "posts/Artigos/GNNenrich.html#graph-neural-networks-gnn",
+    "title": "Relatório – Enriquecimento Funcional Baseado em Redes Neurais em Bioinformática",
+    "section": "Graph Neural Networks (GNN)",
+    "text": "Graph Neural Networks (GNN)\nModelos de inteligência artificial desenvolvidos para trabalhar com estruturas em grafos, muito úteis para:\n\nredes biológicas;\nredes sociais;\nsistemas complexos.\n\nNo contexto biológico, proteínas são representadas como nós e suas interações como arestas."
+  },
+  {
+    "objectID": "posts/Artigos/GNNenrich.html#huang-dw-sherman-bt-lempicki-ra.-2009",
+    "href": "posts/Artigos/GNNenrich.html#huang-dw-sherman-bt-lempicki-ra.-2009",
+    "title": "Relatório – Enriquecimento Funcional Baseado em Redes Neurais em Bioinformática",
+    "section": "1. Huang DW, Sherman BT, Lempicki RA. (2009)",
+    "text": "1. Huang DW, Sherman BT, Lempicki RA. (2009)\nBioinformatics enrichment tools: paths toward the comprehensive functional analysis of large gene lists.\nDiscussão clássica sobre ferramentas de enriquecimento funcional e limitações dos métodos tradicionais."
+  },
+  {
+    "objectID": "posts/Artigos/GNNenrich.html#geistlinger-l-et-al.-2021",
+    "href": "posts/Artigos/GNNenrich.html#geistlinger-l-et-al.-2021",
+    "title": "Relatório – Enriquecimento Funcional Baseado em Redes Neurais em Bioinformática",
+    "section": "2. Geistlinger L et al. (2021)",
+    "text": "2. Geistlinger L et al. (2021)\nToward a gold standard for benchmarking gene set enrichment analysis.\nRevisão sobre benchmarking de métodos de enriquecimento gênico."
+  },
+  {
+    "objectID": "posts/Artigos/GNNenrich.html#zhang-xm-et-al.-2021",
+    "href": "posts/Artigos/GNNenrich.html#zhang-xm-et-al.-2021",
+    "title": "Relatório – Enriquecimento Funcional Baseado em Redes Neurais em Bioinformática",
+    "section": "3. Zhang XM et al. (2021)",
+    "text": "3. Zhang XM et al. (2021)\nGraph neural networks and their current applications in bioinformatics.\nRevisão sobre aplicações de GNN em bioinformática."
+  },
+  {
+    "objectID": "posts/Artigos/GNNenrich.html#subramanian-a-et-al.-2005",
+    "href": "posts/Artigos/GNNenrich.html#subramanian-a-et-al.-2005",
+    "title": "Relatório – Enriquecimento Funcional Baseado em Redes Neurais em Bioinformática",
+    "section": "4. Subramanian A et al. (2005)",
+    "text": "4. Subramanian A et al. (2005)\nGene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles.\nArtigo fundamental que introduziu o método GSEA."
+  },
+  {
+    "objectID": "posts/Artigos/GNNenrich.html#szklarczyk-d-et-al.-2019",
+    "href": "posts/Artigos/GNNenrich.html#szklarczyk-d-et-al.-2019",
+    "title": "Relatório – Enriquecimento Funcional Baseado em Redes Neurais em Bioinformática",
+    "section": "5. Szklarczyk D et al. (2019)",
+    "text": "5. Szklarczyk D et al. (2019)\nSTRING v11: protein–protein association networks with increased coverage.\nDescrição da base de dados STRING para interações proteína-proteína."
   }
 ]
