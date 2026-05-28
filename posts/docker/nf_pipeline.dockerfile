@@ -1,3 +1,0 @@
-FROM: condaforge/mambaforge
- 
-	
