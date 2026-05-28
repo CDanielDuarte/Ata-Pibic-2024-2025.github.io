@@ -1,3 +1,10 @@
+---
+title: "GNNrich"
+author: "Carlos Daniel M Duarte"
+date: "2026-05-27"
+categories: [Artigos]
+---
+
 # Relatório – Enriquecimento Funcional Baseado em Redes Neurais em Bioinformática
 
 ## Introdução
